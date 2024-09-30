@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Website</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on My Website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Mar 2024 15:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🙋‍♂️ About Me</title>
+      <link>//localhost:1313/about.html</link>
+      <pubDate>Thu, 28 Mar 2024 15:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about.html</guid>
+      <description>&lt;h2 id=&#34;introductionoverview&#34;&gt;Introduction/Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Name:&lt;/strong&gt; ALBERTO PRIOR&lt;br&gt;&#xA;&lt;strong&gt;Headline:&lt;/strong&gt; Experienced Software Engineer Committed to Clean Code and Continuous Learning.&lt;br&gt;&#xA;&lt;strong&gt;Photo:&lt;/strong&gt; [Add the link to your professional photo here]&lt;br&gt;&#xA;&lt;strong&gt;Brief Summary:&lt;/strong&gt;&lt;br&gt;&#xA;Bachelor’s degree in Computer Science from the University of Trento.&lt;br&gt;&#xA;Experience in C# and Microsoft EFC as a programmer.&lt;br&gt;&#xA;Skills in various programming languages, including Java, C/C++, ML, and web programming.&lt;/p&gt;&#xA;&lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Phone Number:&lt;/strong&gt; +81 090-8141-5768&lt;br&gt;&#xA;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:alberto.prior98@gmail.com&#34;&gt;alberto.prior98@gmail.com&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;#&#34;&gt;LinkedIn Profile&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Address:&lt;/strong&gt; Tokyo, Minato City, Takanawa, 1 Chome−26−22.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
