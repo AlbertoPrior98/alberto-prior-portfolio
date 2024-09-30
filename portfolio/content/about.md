@@ -10,7 +10,6 @@ url: "/about.html"
 ## Introduction/Overview
 **Name:** ALBERTO PRIOR  
 **Headline:** Experienced Software Engineer Committed to Clean Code and Continuous Learning.  
-**Photo:** [Add the link to your professional photo here]  
 **Brief Summary:**  
 Bachelor’s degree in Computer Science from the University of Trento.  
 Experience in C# and Microsoft EFC as a programmer.  
@@ -19,7 +18,7 @@ Skills in various programming languages, including Java, C/C++, ML, and web prog
 ## Contact Information
 **Phone Number:** +81 090-8141-5768  
 **Email:** alberto.prior98@gmail.com  
-**LinkedIn:** [LinkedIn Profile](#)  
+**LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/albertoprior/)  
 **Address:** Tokyo, Minato City, Takanawa, 1 Chome−26−22.
 
 ## Education
