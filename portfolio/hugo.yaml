@@ -3,20 +3,7 @@ languageCode: 'en-us'
 title: 'My Website'
 theme: 'terminal'
 timeZone: "Asia/Kolkata"
-menus:
-  main:
-    - identifier: about
-      name: About
-      url: /about.html
-      weight: 20
-    - identifier: blog
-      name: Blog
-      url: /blog
-      weight: 30
-    - identifier: tags
-      name: Tags
-      url: /tags
-      weight: 40
+      
 paginate: 10
 permalinks:
   blog: "/blog/:year/:month/:day/:title/"
@@ -38,28 +25,57 @@ markup:
     unsafe: true
 ignoreFiles:
   - "themes/terminal/content"
-# outputs:
-#   blog:
-#     - HTML
-#     - RSS
-#     - sitemap-blog.xml
-#   home:
-#     - HTML
-#     - RSS
-#     - sitemap.xml
 params:
   social:
     - name: github
       url: https://github.com/myusername
     - name: x
       url: https://x.com/myusername
-    - name: youtube
-      url: https://youtube.com/myusername
     - name: linkedin
-      url: https://linkedin.com/in/myusername
-    - name: "buy me a coffee"
-      url: https://www.buymeacoffee.com/myusername
+      url: https://www.linkedin.com/in/albertoprior/
   disqus: "mydisquscode"
+
+# Multilingual settings
+languages:
+  en:
+    languageName: "English"
+    languageCode: "en-us"
+    contentDir: "content/en"
+    weight: 1
+    menus:
+      main:
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 20
+        - identifier: blog
+          name: Blog
+          url: /blog/
+          weight: 30
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 40
+
+  jp:
+    languageName: "日本語"
+    languageCode: "ja"
+    contentDir: "content/jp"
+    weight: 2
+    menus:
+      main:
+        - identifier: about
+          name: アバウト
+          url: /jp/about/
+          weight: 20
+        - identifier: blog
+          name: ブログ
+          url: /jp/blog/
+          weight: 30
+        - identifier: tags
+          name: タグ
+          url: /jp/tags/
+          weight: 40
 
 module:
   hugoVersion:

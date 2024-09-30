@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Website</title>
+    <link>//localhost:1313/jp/</link>
+    <description>Recent content on My Website</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 28 Mar 2024 15:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/jp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🙋‍♂️ 自己紹介</title>
+      <link>//localhost:1313/jp/about/</link>
+      <pubDate>Thu, 28 Mar 2024 15:00:00 +0000</pubDate>
+      <guid>//localhost:1313/jp/about/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;名前:&lt;/strong&gt; アルベルト・プリオール&lt;br&gt;&#xA;&lt;strong&gt;見出し:&lt;/strong&gt; クリーンコードと継続的学習にコミットした経験豊富なソフトウェアエンジニア。&lt;br&gt;&#xA;&lt;strong&gt;簡単な概要:&lt;/strong&gt;&lt;br&gt;&#xA;トレント大学でコンピュータサイエンスの学士号を取得。&lt;br&gt;&#xA;C#とMicrosoft EFCのプログラマーとしての経験。&lt;br&gt;&#xA;Java、C/C++、ML、ウェブプログラミングを含むさまざまなプログラミング言語のスキル。&lt;/p&gt;&#xA;&lt;h2 id=&#34;連絡先情報&#34;&gt;連絡先情報&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;電話番号:&lt;/strong&gt; +81 090-8141-5768&lt;br&gt;&#xA;&lt;strong&gt;メール:&lt;/strong&gt; &lt;a href=&#34;mailto:alberto.prior98@gmail.com&#34;&gt;alberto.prior98@gmail.com&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/albertoprior/&#34;&gt;LinkedIn プロフィール&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;住所:&lt;/strong&gt; 東京、港区、高輪、1丁目−26−22。&lt;/p&gt;&#xA;&lt;h2 id=&#34;学歴&#34;&gt;学歴&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;ISIキャリアと言語アカデミー（渋谷、東京、日本）&lt;/strong&gt;&lt;br&gt;&#xA;日本語学校 | 2023年10月 - 2024年9月卒業予定&lt;br&gt;&#xA;&lt;strong&gt;Academy C# Developer (Quanta, Forma.Temp Fund)&lt;/strong&gt;&lt;br&gt;&#xA;2021年11月 - 2021年12月（208時間）&lt;br&gt;&#xA;&lt;strong&gt;トレント大学&lt;/strong&gt;&lt;br&gt;&#xA;コンピュータサイエンスの学士号 | 2017年 - 2022年&lt;br&gt;&#xA;&lt;strong&gt;ガリレオ・ガリレイ科学高校&lt;/strong&gt;&lt;br&gt;&#xA;高校卒業証書 | 2012年 - 2017年&lt;/p&gt;&#xA;&lt;h2 id=&#34;職務経験&#34;&gt;職務経験&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;C#バックエンド開発者 - アクセンチュアイタリア&lt;/strong&gt;&lt;br&gt;&#xA;&lt;strong&gt;期間:&lt;/strong&gt; 2022年4月 - 2023年9月&lt;br&gt;&#xA;&lt;strong&gt;主な責任:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Microsoft Azureで.NETマイクロサービスを開発。&lt;/li&gt;&#xA;&lt;li&gt;既存プロジェクトのリファクタリング、単体テストの実装、コードレビューに参加。&lt;/li&gt;&#xA;&lt;li&gt;CI/CDパイプラインとアジャイル開発プロセスで作業。&lt;br&gt;&#xA;&lt;strong&gt;技術:&lt;/strong&gt; .NET、Entity Framework、PostgreSQL、Docker、Kubernetes、GIT、Azure DevOps。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;インターンシップ - Ontopic S.r.l.&lt;/strong&gt;&lt;br&gt;&#xA;&lt;strong&gt;期間:&lt;/strong&gt; 2020年&lt;br&gt;&#xA;&lt;strong&gt;主な責任:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
