@@ -8,20 +8,23 @@
 
 <script>
     document.getElementById('language-switch').addEventListener('change', function() {
-        // Check the current language based on the URL
-        const currentLang = window.location.pathname.includes('/jp/') ? 'jp' : 'en';
-        
         // Determine the new language
-        const newLang = currentLang === 'en' ? 'jp' : 'en';
-    
-        // Switch to the new language by replacing the language code in the URL
-        let newUrl = window.location.pathname.replace('/' + currentLang + '/', '/' + newLang + '/');
-    
-        // For the homepage, handle it separately (since it's likely root or localized root)
-        if (window.location.pathname === '/' || window.location.pathname === '/jp/') {
-            newUrl = newLang === 'en' ? '/' : '/jp/';
+        const newLang = this.checked ? 'jp' : 'en'; // Modificato
+
+        // Switch to the new language by updating the URL
+        let newUrl = window.location.pathname;
+
+        if (newLang === 'jp') {
+            // Aggiungi '/jp' se la lingua è giapponese
+            newUrl = newUrl.replace(/^\/(?!jp)/, '/jp'); // Modificato
+        } else {
+            // Rimuovi '/jp' se la lingua è inglese
+            newUrl = newUrl.replace(/\/jp/, ''); // Modificato
         }
-    
+
+        // Assicurati che ci sia uno '/' tra '/jp' e il resto del percorso
+        newUrl = newUrl.replace(/\/jp([^\/]*)/, '/jp/$1'); // Modificato
+
         // Reload the page with the new language
         window.location.href = newUrl;
     });

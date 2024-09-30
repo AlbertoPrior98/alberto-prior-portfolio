@@ -58,6 +58,49 @@
 
 
 
+   <br>
+
+   <label class="switch">
+    <input class="cb" type="checkbox" id="language-switch" />
+    <span class="toggle">
+        <span class="left">EN</span>
+        <span class="right">JP</span>
+    </span>
+</label>
+
+<script>
+    document.getElementById('language-switch').addEventListener('change', function() {
+        
+        const newLang = this.checked ? 'jp' : 'en'; 
+
+        
+        let newUrl = window.location.pathname;
+
+        if (newLang === 'jp') {
+            
+            newUrl = newUrl.replace(/^\/(?!jp)/, '/jp'); 
+        } else {
+            
+            newUrl = newUrl.replace(/\/jp/, ''); 
+        }
+
+        
+        newUrl = newUrl.replace(/\/jp([^\/]*)/, '/jp/$1'); 
+
+        
+        window.location.href = newUrl;
+    });
+
+    window.addEventListener('DOMContentLoaded', function() {
+        const currentLang = window.location.pathname.includes('/jp/') ? 'jp' : 'en';
+        const languageSwitch = document.getElementById('language-switch');
+        
+        
+        languageSwitch.checked = (currentLang === 'jp'); 
+    });
+</script>
+
+
     </ul>
   </div>
   <div class="open-dropdown-button lg:hidden">

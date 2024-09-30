@@ -101,19 +101,22 @@
 <script>
     document.getElementById('language-switch').addEventListener('change', function() {
         
-        const currentLang = window.location.pathname.includes('/jp/') ? 'jp' : 'en';
+        const newLang = this.checked ? 'jp' : 'en'; 
+
         
-        
-        const newLang = currentLang === 'en' ? 'jp' : 'en';
-    
-        
-        let newUrl = window.location.pathname.replace('/' + currentLang + '/', '/' + newLang + '/');
-    
-        
-        if (window.location.pathname === '/' || window.location.pathname === '/jp/') {
-            newUrl = newLang === 'en' ? '/' : '/jp/';
+        let newUrl = window.location.pathname;
+
+        if (newLang === 'jp') {
+            
+            newUrl = newUrl.replace(/^\/(?!jp)/, '/jp'); 
+        } else {
+            
+            newUrl = newUrl.replace(/\/jp/, ''); 
         }
-    
+
+        
+        newUrl = newUrl.replace(/\/jp([^\/]*)/, '/jp/$1'); 
+
         
         window.location.href = newUrl;
     });
