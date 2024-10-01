@@ -22,22 +22,24 @@
 <body class="bg-gradient-to-r from-slate-900 to-slate-800 font-mono text-white">
   <div class="container mx-auto flex flex-col px-4 xl:w-8/12 sm:max-w-full">
     
-    <div class="flex flex-col h-[calc(100dvh)]">
-      <div class="flex flex-col justify-center items-center gap-4 flex-grow">
-        <div class="flex flex-col justify-center items-center gap-4">
+<div class="flex flex-col h-[calc(100dvh)]">
+  <div class="flex flex-col justify-center items-center gap-4 flex-grow">
+    <div class="flex flex-col justify-center items-center gap-4">
+      
+      <div class="flex flex-col gap-4 items-center justify-center">
+        <h1 class="font-bold text-5xl hover:text-sky-400 max-sm:text-4xl">
+          <a href="//localhost:1313/" class="whitespace-nowrap">
+            アルベルト・プリオール
+          </a>
+        </h1>
+        
+        <button id="hoverButton" style="cursor: default;"> フレーズ 0
+        </button>
+      </div>
+      
+      <div>
+        <ul class="flex flex-row justify-center items-center gap-6 text-xl max-sm:hidden visible">
           
-          <div class="flex flex-col gap-4 items-center justify-center">
-            <h1 class="font-bold text-5xl hover:text-sky-400 max-sm:text-4xl">
-              <a href="//localhost:1313/" class="whitespace-nowrap">
-                アルベルト・プリオル
-              </a>
-            </h1>
-            <p>良いことを考え、良いことを行おう！</p>
-          </div>
-          
-          <div>
-            <ul class="flex flex-row justify-center items-center gap-6 text-xl max-sm:hidden visible">
-              
   <li class="font-bold border border-sky-400 p-2 hover:bg-sky-400 focus:text-sky-400 text-center">
     <a href="/jp/about/">アバウト</a>
   </li>
@@ -51,11 +53,11 @@
   </li>
 
 
-            </ul>
-          </div>
-          
-          <div class="flex flex-row gap-6 p-4 border">
-            
+        </ul>
+      </div>
+      
+      <div class="flex flex-row gap-6 p-4 border">
+        
   <div>
     <a href="https://github.com/myusername">
       
@@ -88,9 +90,9 @@
     </a>
   </div>
 
-          </div>
-          <div class="flex flex-row gap-6 p-4 border">
-            <label class="switch">
+      </div>
+      <div class="flex flex-row gap-6 p-4 border">
+        <label class="switch">
     <input class="cb" type="checkbox" id="language-switch" />
     <span class="toggle">
         <span class="left">EN</span>
@@ -130,10 +132,10 @@
     });
 </script>
 
-          </div>
-        </div>
-        
-        <div class="footer flex items-center justify-center">
+      </div>
+    </div>
+
+    <div class="footer flex items-center justify-center">
   <div class="absolute bottom-0 py-4">
     <div class="py-4">
   <footer>
@@ -142,9 +144,133 @@
 </div>
   </div>
 </div>
-        
-      </div>
-    </div>
+
+  </div>
+</div>
+
+<style>
+   
+button,
+button::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #41bcf5 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+}
+
+button::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "* * * * * * ";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #192334 5%);
+ text-shadow: -3px -3px 0px #41bcf5, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+button:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+</style>
+
+
+<script>
+  const phrases = [
+    "フレーズ 1",
+    "フレーズ 2",
+    "フレーズ 3",
+    "フレーズ 4",
+    "フレーズ 5",
+    "フレーズ 6",
+    "フレーズ 7",
+    "フレーズ 8",
+    "フレーズ 9",
+    "フレーズ 10"
+  ];
+
+  const button = document.getElementById('hoverButton');
+
+  button.addEventListener('mouseover', () => {
+    const randomIndex = Math.floor(Math.random() * phrases.length);
+    button.textContent = phrases[randomIndex];
+  });
+
+</script>
+
 
   </div>
   

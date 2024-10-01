@@ -1,33 +1,159 @@
 {{ define "main" }}
-    <div class="flex flex-col h-[calc(100dvh)]">
-      <div class="flex flex-col justify-center items-center gap-4 flex-grow">
-        <div class="flex flex-col justify-center items-center gap-4">
-          <!-- Name of Website -->
-          <div class="flex flex-col gap-4 items-center justify-center">
-            <h1 class="font-bold text-5xl hover:text-sky-400 max-sm:text-4xl">
-              <a href="{{ .Site.BaseURL }}" class="whitespace-nowrap">
-                アルベルト・プリオル
-              </a>
-            </h1>
-            <p>良いことを考え、良いことを行おう！</p>
-          </div>
-          <!-- Navigation for Big Screens -->
-          <div>
-            <ul class="flex flex-row justify-center items-center gap-6 text-xl max-sm:hidden visible">
-              {{ partial "home_menu.html" . }}
-            </ul>
-          </div>
-          <!-- Social -->
-          <div class="flex flex-row gap-6 p-4 border">
-            {{ partial "social.html" . }}
-          </div>
-          <div class="flex flex-row gap-6 p-4 border">
-            {{ partial "switch.html" . }}
-          </div>
-        </div>
-        
-        {{ partial "footer_bottom.html" . }}
-        
+<div class="flex flex-col h-[calc(100dvh)]">
+  <div class="flex flex-col justify-center items-center gap-4 flex-grow">
+    <div class="flex flex-col justify-center items-center gap-4">
+      <!-- ウェブサイトの名前 -->
+      <div class="flex flex-col gap-4 items-center justify-center">
+        <h1 class="font-bold text-5xl hover:text-sky-400 max-sm:text-4xl">
+          <a href="{{ .Site.BaseURL }}" class="whitespace-nowrap">
+            アルベルト・プリオール
+          </a>
+        </h1>
+        <!-- <p>良いことを考え、良いことをしよう！</p> -->
+        <button id="hoverButton" style="cursor: default;"> フレーズ 0
+        </button>
+      </div>
+      <!-- 大画面用のナビゲーション -->
+      <div>
+        <ul class="flex flex-row justify-center items-center gap-6 text-xl max-sm:hidden visible">
+          {{ partial "home_menu.html" . }}
+        </ul>
+      </div>
+      <!-- ソーシャル -->
+      <div class="flex flex-row gap-6 p-4 border">
+        {{ partial "social.html" . }}
+      </div>
+      <div class="flex flex-row gap-6 p-4 border">
+        {{ partial "switch.html" . }}
       </div>
     </div>
+
+    {{ partial "footer_bottom.html" . }}
+
+  </div>
+</div>
+
+<style>
+ /* Uiverse.ioのnamechoから */ 
+button,
+button::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #41bcf5 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+}
+
+button::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "* * * * * * ";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #192334 5%);
+ text-shadow: -3px -3px 0px #41bcf5, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+button:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+</style>
+
+<!-- テキスト変更を管理するスクリプトの追加 -->
+<script>
+  const phrases = [
+    "フレーズ 1",
+    "フレーズ 2",
+    "フレーズ 3",
+    "フレーズ 4",
+    "フレーズ 5",
+    "フレーズ 6",
+    "フレーズ 7",
+    "フレーズ 8",
+    "フレーズ 9",
+    "フレーズ 10"
+  ];
+
+  const button = document.getElementById('hoverButton');
+
+  button.addEventListener('mouseover', () => {
+    const randomIndex = Math.floor(Math.random() * phrases.length);
+    button.textContent = phrases[randomIndex];
+  });
+
+</script>
+
 {{ end }}
