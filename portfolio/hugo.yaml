@@ -1,12 +1,12 @@
 baseURL: ''
 languageCode: 'en-us'
-title: 'My Website'
+title: 'Alberto Prior Portfolio'
 theme: 'terminal'
 timeZone: "Asia/Kolkata"
       
 paginate: 10
 permalinks:
-  blog: "/blog/:year/:month/:day/:title/"
+  projects: "/projects/:year/:month/:day/:title/"
 taxonomies:
   tag: "tags"
   author: "authors"
@@ -22,15 +22,17 @@ markup:
     # Enable or disable superscript and subscript support
     # (enable to allow ^ and ~ for superscript and subscript)
     superscript: true
+    renderer: 
+      unsafe: true
     unsafe: true
 ignoreFiles:
   - "themes/terminal/content"
 params:
   social:
     - name: github
-      url: https://github.com/myusername
+      url: https://github.com/AlbertoPrior98
     - name: x
-      url: https://x.com/myusername
+      url: 
     - name: linkedin
       url: https://www.linkedin.com/in/albertoprior/
   disqus: "mydisquscode"
@@ -48,14 +50,10 @@ languages:
           name: About
           url: /about/
           weight: 20
-        - identifier: blog
-          name: Blog
-          url: /blog/
+        - identifier: projects
+          name: Projects
+          url: /projects/
           weight: 30
-        - identifier: tags
-          name: Tags
-          url: /tags/
-          weight: 40
 
   jp:
     languageName: "日本語"
@@ -68,14 +66,10 @@ languages:
           name: アバウト
           url: /jp/about/
           weight: 20
-        - identifier: blog
-          name: ブログ
-          url: /jp/blog/
+        - identifier: projects
+          name: プロジェクト
+          url: /jp/projects/
           weight: 30
-        - identifier: tags
-          name: タグ
-          url: /jp/tags/
-          weight: 40
 
 module:
   hugoVersion:

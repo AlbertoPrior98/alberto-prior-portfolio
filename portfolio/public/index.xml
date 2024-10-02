@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Website</title>
+    <title>Alberto Prior Portfolio</title>
     <link>//localhost:1313/</link>
-    <description>Recent content on My Website</description>
+    <description>Recent content on Alberto Prior Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Mar 2024 15:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2024 15:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>🙋‍♂️ About Me</title>
+      <title>About Me</title>
       <link>//localhost:1313/about/</link>
-      <pubDate>Thu, 28 Mar 2024 15:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Oct 2024 15:00:00 +0000</pubDate>
       <guid>//localhost:1313/about/</guid>
-      <description>&lt;h2 id=&#34;introductionoverview&#34;&gt;Introduction/Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Name:&lt;/strong&gt; ALBERTO PRIOR&lt;br&gt;&#xA;&lt;strong&gt;Headline:&lt;/strong&gt; Experienced Software Engineer Committed to Clean Code and Continuous Learning.&lt;br&gt;&#xA;&lt;strong&gt;Brief Summary:&lt;/strong&gt;&lt;br&gt;&#xA;Bachelor’s degree in Computer Science from the University of Trento.&lt;br&gt;&#xA;Experience in C# and Microsoft EFC as a programmer.&lt;br&gt;&#xA;Skills in various programming languages, including Java, C/C++, ML, and web programming.&lt;/p&gt;&#xA;&lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Phone Number:&lt;/strong&gt; +81 090-8141-5768&lt;br&gt;&#xA;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:alberto.prior98@gmail.com&#34;&gt;alberto.prior98@gmail.com&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/albertoprior/&#34;&gt;LinkedIn Profile&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Address:&lt;/strong&gt; Tokyo, Minato City, Takanawa, 1 Chome−26−22.&lt;/p&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;ISI Career and Language Academy (Shibuya, Tokyo, Japan)&lt;/strong&gt;&lt;br&gt;&#xA;Japanese Language School | October 2023 - Expected Graduation September 2024&lt;br&gt;&#xA;&lt;strong&gt;Academy C# Developer (Quanta, Forma.Temp Fund)&lt;/strong&gt;&lt;br&gt;&#xA;November 2021 - December 2021 (208 hours)&lt;br&gt;&#xA;&lt;strong&gt;University of Trento&lt;/strong&gt;&lt;br&gt;&#xA;Bachelor’s Degree in Computer Science | 2017 - 2022&lt;br&gt;&#xA;&lt;strong&gt;Galileo Galilei Scientific High School&lt;/strong&gt;&lt;br&gt;&#xA;High School Diploma | 2012 - 2017&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Name:&lt;/strong&gt; ALBERTO PRIOR&lt;br&gt;&#xA;&lt;strong&gt;Title:&lt;/strong&gt; Software Engineer&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt;&lt;br&gt;&#xA;I am a passionate and dedicated software engineer with a Bachelor&amp;rsquo;s degree in Computer Science from the University of Trento. With hands-on experience in C# development and a strong foundation in backend technologies, I have contributed to dynamic projects during my experience at Accenture Italy. My technical repertoire spans multiple programming languages, including C#, Java, C/C++, and web technologies, combined with a keen interest in building scalable and efficient systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝 Portfolio</title>
+      <link>//localhost:1313/projects/2024/03/30/portfolio/</link>
+      <pubDate>Sat, 30 Mar 2024 19:25:10 +0530</pubDate>
+      <guid>//localhost:1313/projects/2024/03/30/portfolio/</guid>
+      <description>&lt;p&gt;This personal portfolio made with go language and hugo&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

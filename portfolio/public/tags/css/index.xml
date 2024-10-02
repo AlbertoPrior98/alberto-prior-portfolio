@@ -6,14 +6,6 @@
     <description>Recent content in Css on My Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Mar 2024 19:25:10 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/tags/css/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>📝 This is a Very Big Post Title to Test the CSS of this Theme</title>
-      <link>//localhost:1313/blog/2024/03/30/this-is-a-very-big-post-title-to-test-the-css-of-this-theme/</link>
-      <pubDate>Sat, 30 Mar 2024 19:25:10 +0530</pubDate>
-      <guid>//localhost:1313/blog/2024/03/30/this-is-a-very-big-post-title-to-test-the-css-of-this-theme/</guid>
-      <description>&lt;p&gt;Hello World!&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

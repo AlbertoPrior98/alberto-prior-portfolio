@@ -2,21 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/jp/about/</loc>
-    <lastmod>2024-03-28T15:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="//localhost:1313/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="//localhost:1313/jp/about/"
-                />
-  </url><url>
     <loc>//localhost:1313/jp/</loc>
-    <lastmod>2024-03-28T15:00:00+00:00</lastmod>
+    <lastmod>2024-10-01T15:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -28,7 +15,47 @@
                 href="//localhost:1313/jp/"
                 />
   </url><url>
+    <loc>//localhost:1313/jp/about/</loc>
+    <lastmod>2024-10-01T15:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="//localhost:1313/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/jp/about/"
+                />
+  </url><url>
+    <loc>//localhost:1313/jp/projects/2024/03/30/portfolio/</loc>
+    <lastmod>2024-03-30T19:25:10+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="//localhost:1313/projects/2024/03/30/portfolio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/jp/projects/2024/03/30/portfolio/"
+                />
+  </url><url>
+    <loc>//localhost:1313/jp/authors/alberto-prior/</loc>
+    <lastmod>2024-03-30T19:25:10+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="//localhost:1313/authors/alberto-prior/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/jp/authors/alberto-prior/"
+                />
+  </url><url>
     <loc>//localhost:1313/jp/authors/</loc>
+    <lastmod>2024-03-30T19:25:10+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -40,7 +67,34 @@
                 href="//localhost:1313/jp/authors/"
                 />
   </url><url>
+    <loc>//localhost:1313/jp/tags/go/</loc>
+    <lastmod>2024-03-30T19:25:10+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="//localhost:1313/tags/go/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/jp/tags/go/"
+                />
+  </url><url>
+    <loc>//localhost:1313/jp/tags/hugo/</loc>
+    <lastmod>2024-03-30T19:25:10+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="//localhost:1313/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/jp/tags/hugo/"
+                />
+  </url><url>
     <loc>//localhost:1313/jp/tags/</loc>
+    <lastmod>2024-03-30T19:25:10+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -50,6 +104,19 @@
                 rel="alternate"
                 hreflang="ja"
                 href="//localhost:1313/jp/tags/"
+                />
+  </url><url>
+    <loc>//localhost:1313/jp/projects/</loc>
+    <lastmod>2024-03-28T15:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="//localhost:1313/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/jp/projects/"
                 />
   </url>
 </urlset>
