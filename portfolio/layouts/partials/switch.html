@@ -1,0 +1,39 @@
+<label class="switch">
+    <input class="cb" type="checkbox" id="language-switch" />
+    <span class="toggle">
+        <span class="left">EN</span>
+        <span class="right">JP</span>
+    </span>
+</label>
+
+<script>
+    document.getElementById('language-switch').addEventListener('change', function() {
+        // Determine the new language
+        const newLang = this.checked ? 'jp' : 'en'; // Modificato
+
+        // Switch to the new language by updating the URL
+        let newUrl = window.location.pathname;
+
+        if (newLang === 'jp') {
+            // Aggiungi '/jp' se la lingua è giapponese
+            newUrl = newUrl.replace(/^\/(?!jp)/, '/jp'); // Modificato
+        } else {
+            // Rimuovi '/jp' se la lingua è inglese
+            newUrl = newUrl.replace(/\/jp/, ''); // Modificato
+        }
+
+        // Assicurati che ci sia uno '/' tra '/jp' e il resto del percorso
+        newUrl = newUrl.replace(/\/jp([^\/]*)/, '/jp/$1'); // Modificato
+
+        // Reload the page with the new language
+        window.location.href = newUrl;
+    });
+
+    window.addEventListener('DOMContentLoaded', function() {
+        const currentLang = window.location.pathname.includes('/jp/') ? 'jp' : 'en';
+        const languageSwitch = document.getElementById('language-switch');
+        
+        // Set the switch position based on the current language
+        languageSwitch.checked = (currentLang === 'jp'); // Semplificato
+    });
+</script>

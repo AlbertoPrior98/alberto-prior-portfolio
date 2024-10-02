@@ -1,0 +1,77 @@
+baseURL: ''
+languageCode: 'en-us'
+title: 'Alberto Prior Portfolio'
+theme: 'terminal'
+timeZone: "Asia/Kolkata"
+      
+paginate: 10
+permalinks:
+  projects: "/projects/:year/:month/:day/:title/"
+taxonomies:
+  tag: "tags"
+  author: "authors"
+indexes:
+  tag: "tags"
+markup:
+  defaultMarkdownHandler: "goldmark"
+  goldmark:
+    # Enable or disable smartypants (automatic conversion of ASCII punctuation to smart punctuation)
+    smartypants: true
+    # Enable or disable fractions (automatic conversion of fractions)
+    fractions: true
+    # Enable or disable superscript and subscript support
+    # (enable to allow ^ and ~ for superscript and subscript)
+    superscript: true
+    renderer: 
+      unsafe: true
+    unsafe: true
+ignoreFiles:
+  - "themes/terminal/content"
+params:
+  social:
+    - name: github
+      url: https://github.com/AlbertoPrior98
+    - name: x
+      url: 
+    - name: linkedin
+      url: https://www.linkedin.com/in/albertoprior/
+  disqus: "mydisquscode"
+
+# Multilingual settings
+languages:
+  en:
+    languageName: "English"
+    languageCode: "en-us"
+    contentDir: "content/en"
+    weight: 1
+    menus:
+      main:
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 20
+        - identifier: projects
+          name: Projects
+          url: /projects/
+          weight: 30
+
+  jp:
+    languageName: "日本語"
+    languageCode: "ja"
+    contentDir: "content/jp"
+    weight: 2
+    menus:
+      main:
+        - identifier: about
+          name: アバウト
+          url: /jp/about/
+          weight: 20
+        - identifier: projects
+          name: プロジェクト
+          url: /jp/projects/
+          weight: 30
+
+module:
+  hugoVersion:
+    extended: false
+    min: "0.116.0"
