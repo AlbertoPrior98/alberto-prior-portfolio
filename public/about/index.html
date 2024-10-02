@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="About - {{ .Site.Title }}">
+
+<meta name="ICBM" content="19.0760, 72.8777">
+<meta name="geo.position" content="19.0760;72.8777">
+<meta name="geo.region" content="IN-MH">
+<meta name="geo.placename" content="Mumbai">
+<title>About Me | Alberto Prior Portfolio</title>
+
+
+      <link rel="stylesheet" href="/css/tailwind.css" type="text/css">
+
+</head>
+
+<body class="bg-gradient-to-r from-slate-900 to-slate-800 font-mono text-white">
+  <div class="container mx-auto flex flex-col px-4 xl:w-8/12 sm:max-w-full">
+    
+  
+
+  <header class="flex flex-row py-4" >
+
+  
+
+
+
+  <nav
+    class="flex flex-row items-center w-full justify-between">
+
+
+  
+  
+    <div class="flex flex-col gap-1">
+      <a href="//localhost:1313/" class="text-4xl font-bold hover:text-sky-400 whitespace-nowrap">ALBERTO PRIOR</a>
+    </div>
+  
+
+  <div class="dropdown-menu flex flex-row absolute max-lg:w-full max-lg:items-center max-lg:justify-center max-lg:-top-full lg:static max-lg:bg-slate-900 max-lg:h-[calc(100dvh)] max-lg:left-0">
+    <ul class="flex flex-col lg:flex-row gap-2">
+      
+<li class="font-bold border border-sky-400 px-3 py-2 hover:bg-sky-400 focus:text-sky-400 text-center">
+    <a href="/about/">About</a>
+</li>
+
+<li class="font-bold border border-sky-400 px-3 py-2 hover:bg-sky-400 focus:text-sky-400 text-center">
+    <a href="/projects/">Projects</a>
+</li>
+
+
+
+   <br>
+
+   <label class="switch">
+    <input class="cb" type="checkbox" id="language-switch" />
+    <span class="toggle">
+        <span class="left">EN</span>
+        <span class="right">JP</span>
+    </span>
+</label>
+
+<script>
+    document.getElementById('language-switch').addEventListener('change', function() {
+        
+        const newLang = this.checked ? 'jp' : 'en'; 
+
+        
+        let newUrl = window.location.pathname;
+
+        if (newLang === 'jp') {
+            
+            newUrl = newUrl.replace(/^\/(?!jp)/, '/jp'); 
+        } else {
+            
+            newUrl = newUrl.replace(/\/jp/, ''); 
+        }
+
+        
+        newUrl = newUrl.replace(/\/jp([^\/]*)/, '/jp/$1'); 
+
+        
+        window.location.href = newUrl;
+    });
+
+    window.addEventListener('DOMContentLoaded', function() {
+        const currentLang = window.location.pathname.includes('/jp/') ? 'jp' : 'en';
+        const languageSwitch = document.getElementById('language-switch');
+        
+        
+        languageSwitch.checked = (currentLang === 'jp'); 
+    });
+</script>
+
+
+    </ul>
+  </div>
+  <div class="open-dropdown-button lg:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32" fill="white">
+      <path
+        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+    </svg>
+  </div>
+  <div class="close-dropdown-button hidden z-50">
+    <svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 384 512" width="32" height="32" fill="white">
+      <path
+        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+    </svg>
+  </div>
+</nav>
+
+</header>
+
+  <div class="flex flex-col pt-8 gap-10 w-full">
+    
+    <div class="flex flex-col w-full gap-4">
+      <h2 class="text-3xl font-bold">About Me</h2>
+      <div class="flex flex-col gap-4 w-full">
+        <hr />
+        <div class="prose prose-invert max-w-full">
+  <h2 id="introduction">Introduction</h2>
+<p><strong>Name:</strong> ALBERTO PRIOR<br>
+<strong>Title:</strong> Software Engineer</p>
+<p><strong>Summary:</strong><br>
+I am a passionate and dedicated software engineer with a Bachelor&rsquo;s degree in Computer Science from the University of Trento. With hands-on experience in C# development and a strong foundation in backend technologies, I have contributed to dynamic projects during my experience at Accenture Italy. My technical repertoire spans multiple programming languages, including C#, Java, C/C++, and web technologies, combined with a keen interest in building scalable and efficient systems.</p>
+<hr>
+<h2 id="contact">Contact</h2>
+<p>📞 <strong>Phone:</strong> +81 090-8141-5768<br>
+✉️ <strong>Email:</strong> <a href="mailto:alberto.prior98@gmail.com">alberto.prior98@gmail.com</a><br>
+🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/albertoprior/">LinkedIn Profile</a><br>
+🏠 <strong>Location:</strong> Takanawa, Minato City, Tokyo, Japan</p>
+<hr>
+<h2 id="education">Education</h2>
+<p><strong>ISI Career and Language Academy</strong> (Tokyo, Japan)<br>
+<em>Japanese Language School</em> | Oct 2023 - Sep 2024</p>
+<p><strong>Academy C# Developer</strong> (Quanta, Forma.Temp Fund)<br>
+<em>208-hour Professional Course</em> | Nov 2021 - Dec 2021</p>
+<p><strong>University of Trento</strong> (Italy)<br>
+<em>Bachelor’s Degree in Computer Science</em> | 2017 - 2022</p>
+<p><strong>Galileo Galilei Scientific High School</strong><br>
+<em>High School Diploma</em> | 2012 - 2017</p>
+<hr>
+<h2 id="professional-experience">Professional Experience</h2>
+<h3 id="alc-education-jp-tokyo-japan">ALC Education JP (Tokyo, Japan)</h3>
+<p><strong>Software Engineer</strong> | Sep 2024 – Present</p>
+<ul>
+<li>Currently contributing as a full stack software engineer, enhancing language education platforms.</li>
+</ul>
+<h3 id="alc-education-jp-tokyo-japan-1">ALC Education JP (Tokyo, Japan)</h3>
+<p><strong>Internship</strong> | Jun 2024 – Sep 2024</p>
+<h3 id="accenture-italy-milan-italy">Accenture Italy (Milan, Italy)</h3>
+<p><strong>C# Backend Developer</strong> | Apr 2022 – Sep 2023</p>
+<ul>
+<li>Engineered and maintained .NET microservices on Microsoft Azure.</li>
+<li>Refactored core systems, integrated unit testing, and drove improvements in code quality through comprehensive code reviews.</li>
+<li>Worked within Agile methodologies.</li>
+</ul>
+<p><strong>Technologies:</strong> .NET, Entity Framework, PostgreSQL, Docker, Kubernetes, Azure DevOps.</p>
+<h3 id="ontopic-srl-italy">Ontopic S.r.l. (Italy)</h3>
+<p><strong>Software Engineering Intern</strong> | 2020</p>
+<ul>
+<li>Developed an automated testing environment using CI/CD tools.</li>
+<li>Monitored and analyzed system performance using the ELK Stack.</li>
+</ul>
+<hr>
+<h2 id="technical-skills">Technical Skills</h2>
+<p><strong>Programming Languages:</strong> C#, Java, JavaScript, TypeScript, C++, C<br>
+<strong>Frameworks &amp; Tools:</strong> .NET, Entity Framework, Docker, Kubernetes, Azure, DevOps, Git<br>
+<strong>Testing Tools:</strong> NUnit, Fluent Assertions, MOQ, Integration Testing<br>
+<strong>Cloud &amp; Databases:</strong> Microsoft Azure, NoSQL, PostgreSQL<br>
+<strong>DevOps &amp; Automation:</strong> CI/CD Pipelines, GIT, Docker</p>
+<p><strong>Languages:</strong></p>
+<ul>
+<li>Italian (Native)</li>
+<li>English (B2 Proficiency)</li>
+<li>Japanese (Daily Conversation, JLPT N4/N3)</li>
+</ul>
+<hr>
+<h2 id="certifications">Certifications</h2>
+<ul>
+<li><strong>JLPT N4</strong> (Japanese Language Proficiency Test)</li>
+<li><strong>General Health and Safety in the Workplace</strong></li>
+<li><strong>Driving License</strong> (Category B)</li>
+<li><strong>ECDL Certification</strong> (European Computer Driving Licence)</li>
+</ul>
+<hr>
+<h2 id="volunteer-work">Volunteer Work</h2>
+<ul>
+<li><strong>Scout Leader</strong> | AGESCI Belluno Scout Group 3 | 2018 - 2022</li>
+<li><strong>Volunteer</strong> | Italian Mission, Kibakwe, Tanzania | 2016</li>
+<li><strong>Intern</strong> | Naturalistic Park of Cellarda, Belluno, Italy | 2015</li>
+</ul>
+<hr>
+<h2 id="key-competencies">Key Competencies</h2>
+<ul>
+<li><strong>Problem Solving:</strong> Proven ability to tackle complex technical challenges in fast-paced environments.</li>
+<li><strong>Collaboration:</strong> Strong team player, adept at working within cross-functional teams.</li>
+<li><strong>Attention to Detail:</strong> Focused on delivering high-quality, maintainable code.</li>
+<li><strong>Lifelong Learning:</strong> Committed to continuous skill enhancement and professional growth.</li>
+</ul>
+<hr>
+<h2 id="project-highlights">Project Highlights</h2>
+<h3 id="management-system-development-accenture"><strong>Management System Development (Accenture)</strong></h3>
+<p><em>Project Overview:</em><br>
+Led the development of a comprehensive management system for a large client, integrating client data, product management, and logistics tracking into a single, cohesive platform.</p>
+<p><em>Key Contributions:</em></p>
+<ul>
+<li>Refactored backend architecture to enhance scalability and performance.</li>
+<li>Implemented new features while optimizing code quality and unit testing.</li>
+</ul>
+<h3 id="ontopic-internship"><strong>Ontopic Internship</strong></h3>
+<p><em>Project Overview:</em><br>
+Developed a test environment to evaluate software stability across multiple releases. Focused on automating testing processes and utilizing the ELK Stack for system performance monitoring.</p>
+<hr>
+<h2 id="downloadable-cv">Downloadable CV</h2>
+<p>For a detailed overview of my professional background and experience, <a href="/files/CVEN.pdf">Download My CV (PDF)</a>..</p>
+
+</div>
+      </div>
+    </div>
+    <div class="footer flex items-center justify-center">
+  <div class="py-4">
+  <footer>
+    <p class="whitespace-nowrap">© 2024. All rights reserved.</p>
+  </footer>
+</div>
+</div>
+  </div>
+
+  </div>
+  
+      <script type="text/javascript" src="/js/navbar.js"></script>
+
+  <script id="dsq-count-scr" src="//nayanseth.disqus.com/count.js" async></script>
+  
+</body>
+
+</html>

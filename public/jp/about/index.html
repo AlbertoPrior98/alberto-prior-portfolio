@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="自己紹介 - {{ .Site.Title }}">
+
+<meta name="ICBM" content="19.0760, 72.8777">
+<meta name="geo.position" content="19.0760;72.8777">
+<meta name="geo.region" content="IN-MH">
+<meta name="geo.placename" content="Mumbai">
+<title>自己紹介 | Alberto Prior Portfolio</title>
+
+
+      <link rel="stylesheet" href="/css/tailwind.css" type="text/css">
+
+</head>
+
+<body class="bg-gradient-to-r from-slate-900 to-slate-800 font-mono text-white">
+  <div class="container mx-auto flex flex-col px-4 xl:w-8/12 sm:max-w-full">
+    
+  
+
+  <header class="flex flex-row py-4" >
+
+  
+
+
+
+  <nav
+    class="flex flex-row items-center w-full justify-between">
+
+
+  
+  
+    <div class="flex flex-col gap-1">
+      <a href="//localhost:1313/" class="text-4xl font-bold hover:text-sky-400 whitespace-nowrap">ALBERTO PRIOR</a>
+    </div>
+  
+
+  <div class="dropdown-menu flex flex-row absolute max-lg:w-full max-lg:items-center max-lg:justify-center max-lg:-top-full lg:static max-lg:bg-slate-900 max-lg:h-[calc(100dvh)] max-lg:left-0">
+    <ul class="flex flex-col lg:flex-row gap-2">
+      
+<li class="font-bold border border-sky-400 px-3 py-2 hover:bg-sky-400 focus:text-sky-400 text-center">
+    <a href="/jp/about/">アバウト</a>
+</li>
+
+<li class="font-bold border border-sky-400 px-3 py-2 hover:bg-sky-400 focus:text-sky-400 text-center">
+    <a href="/jp/projects/">プロジェクト</a>
+</li>
+
+
+
+   <br>
+
+   <label class="switch">
+    <input class="cb" type="checkbox" id="language-switch" />
+    <span class="toggle">
+        <span class="left">EN</span>
+        <span class="right">JP</span>
+    </span>
+</label>
+
+<script>
+    document.getElementById('language-switch').addEventListener('change', function() {
+        
+        const newLang = this.checked ? 'jp' : 'en'; 
+
+        
+        let newUrl = window.location.pathname;
+
+        if (newLang === 'jp') {
+            
+            newUrl = newUrl.replace(/^\/(?!jp)/, '/jp'); 
+        } else {
+            
+            newUrl = newUrl.replace(/\/jp/, ''); 
+        }
+
+        
+        newUrl = newUrl.replace(/\/jp([^\/]*)/, '/jp/$1'); 
+
+        
+        window.location.href = newUrl;
+    });
+
+    window.addEventListener('DOMContentLoaded', function() {
+        const currentLang = window.location.pathname.includes('/jp/') ? 'jp' : 'en';
+        const languageSwitch = document.getElementById('language-switch');
+        
+        
+        languageSwitch.checked = (currentLang === 'jp'); 
+    });
+</script>
+
+
+    </ul>
+  </div>
+  <div class="open-dropdown-button lg:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32" fill="white">
+      <path
+        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+    </svg>
+  </div>
+  <div class="close-dropdown-button hidden z-50">
+    <svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 384 512" width="32" height="32" fill="white">
+      <path
+        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+    </svg>
+  </div>
+</nav>
+
+</header>
+
+  <div class="flex flex-col pt-8 gap-10 w-full">
+    
+    <div class="flex flex-col w-full gap-4">
+      <h2 class="text-3xl font-bold">自己紹介</h2>
+      <div class="flex flex-col gap-4 w-full">
+        <hr />
+        <div class="prose prose-invert max-w-full">
+  <h2 id="はじめに">はじめに</h2>
+<p><strong>名前:</strong> アルベルト プリオル<br>
+<strong>職位:</strong> ソフトウェアエンジニア</p>
+<p><strong>概要:</strong><br>
+私はトレント大学でコンピュータサイエンスの学士号を取得した、情熱的で献身的なソフトウェアエンジニアです。C#開発の実務経験と、バックエンド技術の強固な基盤を持ち、Accenture Italyでの経験を通じて動的なプロジェクトに貢献してきました。私の技術レパートリーは、C#、Java、C/C++、およびWeb技術を含む複数のプログラミング言語に渡り、スケーラブルで効率的なシステム構築への強い関心を持っています。</p>
+<hr>
+<h2 id="連絡先">連絡先</h2>
+<p>📞 <strong>電話:</strong> +81 090-8141-5768<br>
+✉️ <strong>メール:</strong> <a href="mailto:alberto.prior98@gmail.com">alberto.prior98@gmail.com</a><br>
+🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/albertoprior/">LinkedIn プロフィール</a><br>
+🏠 <strong>所在地:</strong> 東京都港区高輪</p>
+<hr>
+<h2 id="学歴">学歴</h2>
+<p><strong>ISI キャリア・ランゲージ・アカデミー</strong> (東京、日本)<br>
+<em>日本語学校</em> | 2023年10月 - 2024年9月</p>
+<p><strong>C#開発者アカデミー</strong> (Quanta, Forma.Temp基金)<br>
+<em>208時間の専門コース</em> | 2021年11月 - 2021年12月</p>
+<p><strong>トレント大学</strong> (イタリア)<br>
+<em>コンピュータサイエンス学士号</em> | 2017年 - 2022年</p>
+<p><strong>ガリレオ・ガリレイ科学高校</strong><br>
+<em>高校卒業証書</em> | 2012年 - 2017年</p>
+<hr>
+<h2 id="職務経験">職務経験</h2>
+<h3 id="alc-education-jp-東京日本">ALC Education JP (東京、日本)</h3>
+<p><strong>ソフトウェアエンジニア</strong> | 2024年9月 – 現在</p>
+<ul>
+<li>言語教育プラットフォームの強化にフルスタックエンジニアとして貢献中。</li>
+</ul>
+<h3 id="alc-education-jp-東京日本-1">ALC Education JP (東京、日本)</h3>
+<p><strong>インターン</strong> | 2024年6月 – 2024年9月</p>
+<h3 id="accenture-italy-ミラノイタリア">Accenture Italy (ミラノ、イタリア)</h3>
+<p><strong>C#バックエンド開発者</strong> | 2022年4月 – 2023年9月</p>
+<ul>
+<li>Microsoft Azure上で.NETマイクロサービスの設計・保守。</li>
+<li>コアシステムのリファクタリング、単体テストの統合、コードレビューによる品質向上を推進。</li>
+<li>アジャイル手法での作業。</li>
+</ul>
+<p><strong>技術:</strong> .NET、Entity Framework、PostgreSQL、Docker、Kubernetes、Azure DevOps。</p>
+<h3 id="ontopic-srl-イタリア">Ontopic S.r.l. (イタリア)</h3>
+<p><strong>ソフトウェアエンジニア インターン</strong> | 2020年</p>
+<ul>
+<li>CI/CDツールを使用して自動化されたテスト環境を開発。</li>
+<li>ELKスタックを使用してシステムパフォーマンスを監視・分析。</li>
+</ul>
+<hr>
+<h2 id="技術スキル">技術スキル</h2>
+<p><strong>プログラミング言語:</strong> C#、Java、JavaScript、TypeScript、C++、C<br>
+<strong>フレームワーク &amp; ツール:</strong> .NET、Entity Framework、Docker、Kubernetes、Azure、DevOps、Git<br>
+<strong>テストツール:</strong> NUnit、Fluent Assertions、MOQ、統合テスト<br>
+<strong>クラウド &amp; データベース:</strong> Microsoft Azure、NoSQL、PostgreSQL<br>
+<strong>DevOps &amp; 自動化:</strong> CI/CDパイプライン、GIT、Docker</p>
+<p><strong>言語:</strong></p>
+<ul>
+<li>イタリア語（母語）</li>
+<li>英語（B2レベル）</li>
+<li>日本語（日常会話レベル、JLPT N4/N3）</li>
+</ul>
+<hr>
+<h2 id="資格">資格</h2>
+<ul>
+<li><strong>JLPT N4</strong>（日本語能力試験）</li>
+<li><strong>職場における一般的な健康と安全</strong></li>
+<li><strong>運転免許</strong>（普通免許）</li>
+<li><strong>ECDL認定資格</strong>（欧州コンピュータ運転免許証）</li>
+</ul>
+<hr>
+<h2 id="ボランティア活動">ボランティア活動</h2>
+<ul>
+<li><strong>スカウトリーダー</strong> | AGESCI ベッルーノスカウトグループ3 | 2018年 - 2022年</li>
+<li><strong>ボランティア</strong> | イタリア宣教団、キバクエ、タンザニア | 2016年</li>
+<li><strong>インターン</strong> | チェッラルダ自然公園、ベッルーノ、イタリア | 2015年</li>
+</ul>
+<hr>
+<h2 id="主要スキル">主要スキル</h2>
+<ul>
+<li><strong>問題解決:</strong> 迅速な環境での複雑な技術的課題に取り組む能力を実証。</li>
+<li><strong>協力:</strong> クロスファンクショナルチームでの優れたチームプレーヤー。</li>
+<li><strong>細部への注意:</strong> 高品質でメンテナブルなコードを提供することに注力。</li>
+<li><strong>生涯学習:</strong> スキル向上とプロとしての成長に常に取り組む。</li>
+</ul>
+<hr>
+<h2 id="プロジェクトハイライト">プロジェクトハイライト</h2>
+<h3 id="管理システム開発accenture"><strong>管理システム開発（Accenture）</strong></h3>
+<p><em>プロジェクト概要:</em><br>
+大手クライアント向けに、クライアントデータ、製品管理、物流追跡を統合した包括的な管理システムの開発を主導。</p>
+<p><em>主要貢献:</em></p>
+<ul>
+<li>スケーラビリティとパフォーマンスを向上させるため、バックエンドアーキテクチャをリファクタリング。</li>
+<li>コード品質と単体テストの最適化を図りながら新機能を実装。</li>
+</ul>
+<h3 id="ontopic-インターンシップ"><strong>Ontopic インターンシップ</strong></h3>
+<p><em>プロジェクト概要:</em><br>
+ソフトウェアの安定性を複数リリースにわたって評価するテスト環境を開発。テストプロセスの自動化と、ELKスタックを利用したシステムパフォーマンスの監視に注力。</p>
+<hr>
+<h2 id="ダウンロード可能な履歴書">ダウンロード可能な履歴書</h2>
+<p>私の職務経歴と経験の詳細な概要については、<a href="/files/CVJP.pdf">履歴書をダウンロード（PDF）</a>.してください。</p>
+
+</div>
+      </div>
+    </div>
+    <div class="footer flex items-center justify-center">
+  <div class="py-4">
+  <footer>
+    <p class="whitespace-nowrap">© 2024. All rights reserved.</p>
+  </footer>
+</div>
+</div>
+  </div>
+
+  </div>
+  
+      <script type="text/javascript" src="/js/navbar.js"></script>
+
+  <script id="dsq-count-scr" src="//nayanseth.disqus.com/count.js" async></script>
+  
+</body>
+
+</html>
