@@ -1,4 +1,4 @@
-baseURL: ''
+baseURL: 'https://alberto-prior-portfolio.netlify.app/'
 languageCode: 'en-us'
 title: 'Alberto Prior Portfolio'
 theme: 'terminal'
