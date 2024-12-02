@@ -129,6 +129,8 @@ press <OPT ZR> <COL RED>to move where you are aiming</COL>.`);
       });
     };
 
+    //test
+
     // Update the source and target text with colored placeholders
     const updatedSourceText = colorizeText(sourceText);
     const updatedTargetText = colorizeText(targetText);
