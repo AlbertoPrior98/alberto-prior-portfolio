@@ -150,12 +150,14 @@ press <OPT ZR> <COL RED>to move where you are aiming</COL>.`);
     <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center', gap: '20px', fontFamily: 'sans-serif' }}>
       <div style={{ display: 'flex', gap: '10px' }}>
         <div style={{ width: '100px' }}>Source</div>
+        <textarea value={sourceCounts} readOnly style={{width:'30px', resize:'none'}} rows={6} />
         <div id="source-text" style={{ width: '600px', height: '100px', overflow: 'auto', border: '1px solid #ccc', padding: '5px', whiteSpace: 'pre-wrap' }}>
           {sourceText}
         </div>
       </div>
       <div style={{ display: 'flex', gap: '10px' }}>
         <div style={{ width: '100px' }}>Translation</div>
+        <textarea value={targetCounts} readOnly style={{width:'30px', resize:'none'}} rows={6} />
         <div id="target-text" style={{ width: '600px', height: '100px', overflow: 'auto', border: '1px solid #ccc', padding: '5px', whiteSpace: 'pre-wrap' }}>
           {targetText}
         </div>
